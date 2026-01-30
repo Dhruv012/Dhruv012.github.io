@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Dhruv Patel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html">Dhruv Patel</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/dhruv-patel-554a36184/" aria-label="LinkedIn" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Dhruv012" aria-label="GitHub" target="_blank"><i
+                        class="fab fa-github"></i></a>
+                <!-- <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a> -->
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="research.html">Research</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="travel.html">Travel</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>Projects</h1>
+            <p>Here are some of the technical projects I've worked on, ranging from database engines to full-stack web
+                applications.</p>
+
+            <div class="project-container">
+
+                <!-- 0. SalesSight -->
+                <div class="project-row">
+                    <div class="project-content">
+                        <h3>SalesSight - Grocery Sales Forecasting Tool</h3>
+                        <p>
+                            <strong>Python, LightGBM, Streamlit, Polars</strong><br>
+                            A powerful grocery sales forecasting tool leveraging LightGBM models (Alpha/Beta) for high
+                            accuracy.
+                            Features an interactive Streamlit interface for real-time forecasting and visual analytics.
+                            Optimized for performance using Polars for lightning-fast data processing.
+                        </p>
+                        <p style="margin-top: 0.5rem;">
+                            <a href="javascript:void(0)" onclick="openVideoModal('videos/salessight.mov')"><i
+                                    class="fas fa-video"></i> Watch Full Video</a>
+                        </p>
+                    </div>
+                    <div class="project-image-container">
+                        <video autoplay loop muted playsinline width="100%">
+                            <source src="videos/salessight.mov" type="video/quicktime">
+                            <source src="videos/salessight.mov" type="video/mp4"> <!-- Fallback -->
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- 0.5. IDP MVP -->
+                <div class="project-row">
+                    <div class="project-content">
+                        <h3>Intelligent Document Processing (IDP) MVP</h3>
+                        <p>
+                            <strong>Python Flask, PaddleOCR, OpenCV, JavaScript, HTML5 Canvas</strong><br>
+                            Developed a full-stack "Human-in-the-Loop" application to automate data extraction from
+                            logistics documents.
+                            Integrated PaddleOCR for text detection and built an interactive frontend using HTML5 Canvas
+                            for visual verification of bounding boxes.
+                            Reduced manual data entry time by enabling users to visually select and export correct data
+                            fields.
+                        </p>
+                        <p style="margin-top: 0.5rem;">
+                            <a href="javascript:void(0)" onclick="openVideoModal('videos/idp.mov')"><i
+                                    class="fas fa-video"></i> Watch Full Video</a>
+                        </p>
+                    </div>
+                    <div class="project-image-container">
+                        <video autoplay loop muted playsinline width="100%">
+                            <source src="videos/idp.mov" type="video/quicktime">
+                            <source src="videos/idp.mov" type="video/mp4"> <!-- Fallback -->
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- 1. Custom SQL Engine -->
+                <div class="project-row">
+                    <div class="project-content">
+                        <h3>Custom SQL Engine with BerkeleyDB</h3>
+                        <p>
+                            <strong>C++ | Query Optimization | Concurrency Control</strong><br>
+                            Implemented a relational database engine featuring B+ Tree indexing, a buffer pool manager,
+                            and a query planner.
+                            I built concurrency and transaction control mechanisms to ensure multi-operation consistency
+                            and optimized cost-based query execution to improve lookup efficiency.
+                        </p>
+                        <p style="margin-top: 0.5rem;">
+                            <a href="javascript:void(0)" onclick="openVideoModal('videos/sql_engine.mp4')"><i
+                                    class="fas fa-video"></i> Watch Full Video</a>
+                        </p>
+                    </div>
+                    <div class="project-image-container">
+                        <video autoplay loop muted playsinline width="100%">
+                            <source src="videos/sql_engine.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- 2. Sumazon -->
+                <div class="project-row">
+                    <div class="project-content">
+                        <h3>Sumazon - E-Commerce Platform</h3>
+                        <p>
+                            <strong>Node.js, MongoDB, Angular, AWS</strong><br>
+                            Built a scalable e-commerce platform with REST APIs handling 5K+ monthly sessions.
+                            Designed MongoDB schemas for consistent inventory management and deployed a microservices
+                            architecture on AWS with CI/CD pipelines, achieving 99% uptime.
+                        </p>
+                        <p style="margin-top: 0.5rem;">
+                            <a href="javascript:void(0)" onclick="openVideoModal('videos/Sumazon.mov')"><i
+                                    class="fas fa-video"></i> Watch Full Video</a>
+                        </p>
+                    </div>
+                    <div class="project-image-container">
+                        <video autoplay loop muted playsinline width="100%">
+                            <source src="videos/Sumazon.mov" type="video/quicktime">
+                            <source src="videos/Sumazon.mov" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- 3. Take A Break -->
+                <div class="project-row">
+                    <div class="project-content">
+                        <h3>Take A Break - Navigation App</h3>
+                        <p>
+                            <strong>ASP.NET Core, Azure, SQL Server</strong><br>
+                            Developed a geo-based navigation app with REST APIs for geospatial routing and point-based
+                            search.
+                            Implemented indexed SQL Server operations for high-volume location queries and achieved 100%
+                            unit test coverage with zero-downtime CI/CD deployments.
+                        </p>
+                        <p style="margin-top: 0.5rem;">
+                            <a href="javascript:void(0)" onclick="openVideoModal('videos/take_a_break.mov')"><i
+                                    class="fas fa-video"></i> Watch Full Video</a>
+                        </p>
+                    </div>
+                    <div class="project-image-container">
+                        <video autoplay loop muted playsinline width="100%">
+                            <source src="videos/take_a_break.mov" type="video/quicktime">
+                            <source src="videos/take_a_break.mov" type="video/mp4"> <!-- Fallback -->
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dhruv Patel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <video id="modalVideo" controls width="100%">
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

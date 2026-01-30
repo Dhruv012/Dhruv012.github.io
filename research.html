@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Dhruv Patel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html">Dhruv Patel</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/dhruv-patel-554a36184/" aria-label="LinkedIn" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Dhruv012" aria-label="GitHub" target="_blank"><i
+                        class="fab fa-github"></i></a>
+                <!-- <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a> -->
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="research.html" class="active">Research</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="travel.html">Travel</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>Research</h1>
+
+            <div class="research-section">
+                <h2>Publications</h2>
+                <ul class="news-list">
+                    <li class="news-item">
+                        <span class="news-date">2026</span>
+                        <div class="news-content">
+                            <div style="margin-bottom: 0.5rem;">
+                                <strong>Title:</strong> A Modular UAV-Based Framework for Apple Detection and Yield
+                                Extrapolation from 3D Point Clouds
+                            </div>
+                            <div style="margin-bottom: 0.5rem;">
+                                <strong>Authors:</strong> Kenny Nguyen, Dhruv Jigneshbhai Patel, Tony Nguyen, Nathan
+                                Tran, Wesley Lauer, Amin Riazi, Wan D. Bae, and Shayma Alkobaisi
+                            </div>
+                            <div style="margin-bottom: 0.5rem;">
+                                <strong>Venue:</strong> Accepted at <a href="https://ati.ttu.ee/sac-isde/">The 41st
+                                    ACM/SIGAPP Symposium on Applied Computing (SAC '26)</a>, Thessaloniki, Greece.
+                            </div>
+                            <div style="margin-bottom: 0.5rem;">
+                                <strong>Links:</strong> <a href="#">[PDF]</a> <a href="#">[BibTeX]</a>
+                            </div>
+                            <details>
+                                <summary><strong>Abstract</strong></summary>
+                                <p style="margin-top: 0.5rem; font-size: 0.95rem; line-height: 1.6;">
+                                    Precision agriculture increasingly relies on unoccupied aerial vehicles (UAVs) and
+                                    machine learning to automate fruit monitoring and improve sustainability. While 2D
+                                    imaging approaches face challenges of occlusion, clustering, and calibration,
+                                    UAV-derived 3D point clouds offer richer structural information. This paper presents
+                                    a modular framework for automated apple detection, counting, and yield estimation.
+                                    The framework integrates (1) color-based segmentation (HSV and ExR–LAB), (2)
+                                    regression and clustering (DBSCAN) for apple count estimation, and (3) geometric
+                                    approximations (minimum bounding box, sphere, and ellipsoid) for validation and
+                                    volume modeling. Experiments on UAV imagery from a commercial orchard using
+                                    human-annotated section-level counts as reference ground truth show that regression
+                                    achieves high accuracy (R² ≈ 0.99) for apple-count estimation, while clustering with
+                                    geometric validation provides spatial localization and per-fruit morphology for
+                                    downstream yield assessment.
+                                </p>
+                            </details>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="research-section">
+                <h2>Research Interests</h2>
+                <p>
+                    My research interests lie at the intersection of [Topic A] and [Topic B]. I am particularly
+                    interested in:
+                </p>
+                <ul>
+                    <li>Precision Agriculture & UAV Imagery</li>
+                    <li>3D Point Cloud Processing & Spatial Clustering</li>
+                    <li>Machine Learning for Object Detection & Yield Estimation</li>
+                </ul>
+            </div>
+
+            <div class="research-section">
+                <h2>Advisors and Team</h2>
+                <p>
+                    I have had the privilege of working with:
+                </p>
+                <ul>
+                    <li><strong>[Advisor Name]</strong>, [Title], [University]</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dhruv Patel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

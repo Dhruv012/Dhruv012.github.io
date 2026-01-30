@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Dhruv Patel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            aspect-ratio: 1;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html">Dhruv Patel</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/dhruv-patel-554a36184/" aria-label="LinkedIn" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Dhruv012" aria-label="GitHub" target="_blank"><i
+                        class="fab fa-github"></i></a>
+                <!-- <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a> -->
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="research.html">Research</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="travel.html">Travel</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>Gallery</h1>
+            <p>I enjoy taking pictures on my phone. Here are some moments I've captured.</p>
+
+            <div class="masonry-grid">
+
+                <!-- Graduation -->
+                <div class="masonry-item">
+                    <img src="images/Graduated.jpg" alt="Graduation Day">
+                    <div class="masonry-caption">Graduation Day</div>
+                </div>
+
+                <!-- Award -->
+                <div class="masonry-item">
+                    <img src="images/IMG_0170_receiving_SpiritOfCS_award_from_the_CS_department_batch_year2025.jpeg"
+                        alt="Spirit of CS Award">
+                    <div class="masonry-caption">Receiving the Spirit of CS Award</div>
+                </div>
+
+                <!-- Conference -->
+                <div class="masonry-item">
+                    <img src="images/IMG_0759_attending_conference_with_my_research_teammate_Kenny.JPG"
+                        alt="Research Conference">
+                    <div class="masonry-caption">Attending Conference with Kenny</div>
+                </div>
+
+                <!-- Cricket Team -->
+                <div class="masonry-item">
+                    <img src="images/Cricket/Won_Indoor_cricket_torunament_withTeam(SeattleSundies).jpg"
+                        alt="Indoor Cricket Champions">
+                    <div class="masonry-caption">Indoor Cricket Champions (Seattle Sundies)</div>
+                </div>
+
+                <!-- Cricket Group -->
+                <div class="masonry-item">
+                    <img src="images/Cricket/Cricekt_tem_RCC_win_group.jpg" alt="RCC Team Win">
+                    <div class="masonry-caption">RCC Team Celebration</div>
+                </div>
+
+                <!-- Frisbee -->
+                <div class="masonry-item">
+                    <img src="images/Frisbee/IMG_0677_frisbee_Group2.PNG" alt="Ultimate Frisbee Team">
+                    <div class="masonry-caption">Ultimate Frisbee Team</div>
+                </div>
+
+                <!-- Hiking 1 -->
+                <div class="masonry-item">
+                    <img src="images/Hiking/IMG_1393.jpeg" alt="Hiking View">
+                    <div class="masonry-caption">Scenic Hike</div>
+                </div>
+
+                <!-- Hiking 2 -->
+                <div class="masonry-item">
+                    <img src="images/Hiking/IMG_7495.jpeg" alt="Mountain Peak">
+                    <div class="masonry-caption">On Top of the World</div>
+                </div>
+
+                <!-- Landscape 1 -->
+                <div class="masonry-item">
+                    <img src="images/LandscapesNrandom/IMG_6438.jpeg" alt="Landscape">
+                </div>
+
+                <!-- Landscape 2 -->
+                <div class="masonry-item">
+                    <img src="images/LandscapesNrandom/IMG_8138.jpeg" alt="Landscape">
+                </div>
+
+                <!-- New: Cricket Team 2 -->
+                <div class="masonry-item">
+                    <img src="images/Cricket/ARCL_tournament_cricekt_team(BATMAN).jpg" alt="ARCL Tournament Team">
+                    <div class="masonry-caption">ARCL Tournament Team</div>
+                </div>
+
+                <!-- New: Frisbee Group -->
+                <div class="masonry-item">
+                    <img src="images/Frisbee/IMG_0538_frisbee_Group1.PNG" alt="Frisbee Group">
+                    <div class="masonry-caption">Frisbee Team Huddle</div>
+                </div>
+
+                <!-- New: Hiking 3 -->
+                <div class="masonry-item">
+                    <img src="images/Hiking/IMG_3800.JPG" alt="Hiking Trail">
+                </div>
+
+                <!-- New: Hiking 4 -->
+                <div class="masonry-item">
+                    <img src="images/Hiking/IMG_7887.jpeg" alt="Mountain Landscape">
+                </div>
+
+                <!-- New: Landscape 3 -->
+                <div class="masonry-item">
+                    <img src="images/LandscapesNrandom/IMG_2100.jpeg" alt="Nature Shot">
+                </div>
+
+                <!-- New: Landscape 4 -->
+                <div class="masonry-item">
+                    <img src="images/LandscapesNrandom/IMG_6397.jpeg" alt="Scenic View">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dhruv Patel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
