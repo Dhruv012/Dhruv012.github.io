@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav-links');
 
     if (mobileBtn && navLinks) {
+        mobileBtn.setAttribute('aria-expanded', 'false');
         mobileBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
 
@@ -27,14 +28,38 @@ document.addEventListener('DOMContentLoaded', () => {
             item.classList.add('active');
         }
     });
+
+    // Keep the footer copyright year current
+    document.querySelectorAll('.copyright-year').forEach(el => {
+        el.textContent = new Date().getFullYear();
+    });
+
     // Video Modal Logic
     const modal = document.getElementById('videoModal');
     const modalVideo = document.getElementById('modalVideo');
     const closeBtn = document.querySelector('.close-modal');
 
-    if (modal && modalVideo && closeBtn) {
-        // Close modal on 'X' click
-        closeBtn.addEventListener('click', closeVideoModal);
+    if (modal && modalVideo) {
+        // Open modal from any element carrying a data-video attribute
+        document.querySelectorAll('[data-video]').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                modalVideo.src = trigger.dataset.video;
+                modal.style.display = 'flex';
+                modalVideo.play();
+            });
+        });
+
+        const closeVideoModal = () => {
+            modal.style.display = 'none';
+            modalVideo.pause();
+            modalVideo.currentTime = 0;
+            modalVideo.removeAttribute('src'); // Stop any in-flight download
+            modalVideo.load();
+        };
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closeVideoModal);
+        }
 
         // Close modal on outside click
         window.addEventListener('click', (e) => {
@@ -51,26 +76,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
-function openVideoModal(videoPath) {
-    const modal = document.getElementById('videoModal');
-    const modalVideo = document.getElementById('modalVideo');
-
-    if (modal && modalVideo) {
-        modalVideo.src = videoPath;
-        modal.style.display = 'flex';
-        modalVideo.play();
-    }
-}
-
-function closeVideoModal() {
-    const modal = document.getElementById('videoModal');
-    const modalVideo = document.getElementById('modalVideo');
-
-    if (modal && modalVideo) {
-        modal.style.display = 'none';
-        modalVideo.pause();
-        modalVideo.currentTime = 0;
-        modalVideo.src = ""; // Clear source
-    }
-}
